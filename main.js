@@ -10,13 +10,13 @@ var img = document.getElementById('notification')
      
      case "Clear":
       div.setAttribute('class', 'red')
-      img.setAttribute('src', 'downloads/chris2.png')
+      img.setAttribute('src', '../downloads/chris2.png')
 
       break;
 
     case "red": 
      div.setAttribute('class', 'Clear')
-     img.setAttribute('src', 'downloads/chris.png')
+     img.setAttribute('src', '../downloads/chris.png')
    
     
 
