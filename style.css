@@ -73,5 +73,6 @@ header > img {
 #menu {
   height: 50%;
   width: 20%; 
+  border: 3px solid green;
 
 }
