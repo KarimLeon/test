@@ -69,3 +69,10 @@ header > img {
   bottom: 34%;
 
 }
+
+#menu {
+  position: absolute;
+  height:40%;
+  width: 30%; 
+
+}
