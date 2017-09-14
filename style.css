@@ -71,6 +71,8 @@ header > img {
 }
 
 #menu {
+  position: absolute;
+  left: 50px;
   height: 50%;
   width: 20%; 
 
