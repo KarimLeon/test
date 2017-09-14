@@ -1,5 +1,7 @@
 var img = document.getElementById('notification')  
-  var div = document.querySelector('.Clear')
+var div = document.querySelector('.Clear')
+var nav = document.getElementById('nav')
+var img2 = document.getElementById('menu')
   
   
 
@@ -25,3 +27,12 @@ var img = document.getElementById('notification')
   };
 
   
+  $(document).ready(function() {
+     $(img2).hide(); 
+
+     nav.click(function() {
+       $(img2).show();
+
+     })
+  
+  })
