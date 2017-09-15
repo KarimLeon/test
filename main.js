@@ -26,11 +26,13 @@ var img2 = document.getElementById('menu')
 
   };
 
- nav.addEventListener('click', function() {
-
-   alert('test')
+ nav.onclick = function () { 
 
 
+  alert('test')
 
- })
+
+
+
+ }
    
