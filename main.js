@@ -27,13 +27,11 @@ var img2 = document.getElementById('menu')
   };
 
 
- nav.onclick = function () {
+  $(nav).click(function(){
+    $(img2).hide();
+});
 
-  img2.removeAttribute('hidden')
-
-
-
-
-
- }
+$(nav).click(function(){
+    $(img2).show();
+});
    
