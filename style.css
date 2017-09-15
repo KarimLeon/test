@@ -71,8 +71,9 @@ header > img {
 }
 
 #menu {
-  position: absolute;
-  left:-1px;                       /* Remember to push this to git cuz the internet was out... Time: 9:20am */
+  position: fixed;
+  top: 1%;
+  left:-1px;                      
   height: 50%;                        
   width: 20%; 
 
