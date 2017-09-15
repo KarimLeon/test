@@ -29,10 +29,7 @@ var img2 = document.getElementById('menu')
 
  nav.onclick = function () {
 
-
-
-
- alert('damn')
+  img2.removeAttribute('hidden')
 
 
 
