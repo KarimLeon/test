@@ -30,9 +30,17 @@ var img2 = document.getElementById('menu')
   $(document).ready(function() {
      $(img2).hide(); 
 
-     $(nav).click(function() {
-       $(img2).show();
+     $(nav).on({
 
-     })
-  
+      click: function(){
+        $(img2).show();
+    }, 
+      click: function(){
+        $(img2).hide();
+    }
+
+
+     }
+
+     
   })
