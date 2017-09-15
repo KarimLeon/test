@@ -16,7 +16,7 @@ p {
 }
 
 #notification {
-    position: absolute;
+    position: fixed;
     bottom: 47em;
     left: 94rem;
     border: 3px solid #73AD2;
@@ -25,7 +25,7 @@ p {
 }
 
 #nav { 
-  position: absolute;
+  position: fixed;
   bottom:47em;
   right:96em; 
   border: 3px solid #73AD2;
@@ -72,8 +72,8 @@ header > img {
 
 #menu {
   position: absolute;
-  left:13%;
-  height: 50%;
+  left:-1px;                       /* Remember to push this to git cuz the internet was out... Time: 9:20am */
+  height: 50%;                        
   width: 20%; 
 
 }
