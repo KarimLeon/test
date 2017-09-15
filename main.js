@@ -26,10 +26,14 @@ var img2 = document.getElementById('menu')
 
   };
 
- nav.onclick = function () { 
+
+ nav.onclick = function () {
 
 
-  alert('test')
+
+
+ alert('damn')
+
 
 
 
