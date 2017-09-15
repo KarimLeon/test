@@ -26,21 +26,11 @@ var img2 = document.getElementById('menu')
 
   };
 
-  
-  $(document).ready(function() {
-     $(img2).hide(); 
+ nav.addEventListener('click', function() {
 
-     $(nav).on({
-
-      click: function(){
-        $(img2).show();
-    }, 
-      click: function(){
-        $(img2).hide();
-    }
+   alert('test')
 
 
-     }
 
-     
-  })
+ })
+   
