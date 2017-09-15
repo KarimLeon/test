@@ -27,11 +27,12 @@ var img2 = document.getElementById('menu')
   };
 
 
-  $(nav).click(function(){
-    $(img2).hide();
-});
+  $(document).ready(function() {
+     
+    $(nav).click(function () {
+        
+       $(img2).toggle();
 
-$(nav).click(function(){
-    $(img2).show();
-});
-   
+    })
+
+  })
