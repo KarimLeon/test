@@ -8,12 +8,48 @@ body {
 
 }
 
+.menuBox {
+  position:fixed;
+  top:40px;
+  left:23px;
+  width:22%;
+  height:45%;
+  background: #000000;
+  opacity:0.9;
+}
 
-p {
- color: blue;
- text-align: center;
+.menuBox hr {
+  margin-top: 25px;
+  margin-left:60px;
+  width:50%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
 }
+
+
+#register {
+  position: fixed;
+  left:94%;
+  top:12px;
+  font-size: 20px;
+  color:white;
+  text-align: right;
+ }
+
+ a {
+  text-decoration: none;
+  color: white;
+ }
+
+ .menu ul li:hover {
+  width:60%;
+  height:20%;
+  background: #777171;
+ }
+
 
 #notification {
     position: fixed;
@@ -24,22 +60,16 @@ p {
     
 }
 
-#nav { 
-  position: fixed;
-  bottom:47em;
-  right:96em; 
-  border: 3px solid #73AD2;
-  height: 4%;
-
-}
 
 .main-header {
-  text-align: center;
+  position: fixed;
+  left:44%;
+  z-index: 1;
 }
 
 header > img { 
-   height: 10%;
-   width: 20%;
+   height: 5%;
+   width: 18%;
   
 }
 
@@ -49,7 +79,7 @@ header > img {
 
 .profile > img { 
   position: absolute;
-  bottom: 54%;
+  bottom: 60%;
   left:42%;
   height: 28%;
   width: 13%;
@@ -57,16 +87,43 @@ header > img {
 
 }
 
+.emails-login #mail:focus {
+  opacity: 1;
+}
+
+.passwords-login #pw:focus {
+  opacity: 1;
+}
+
+.emails-login #mail {
+  height: 30px;
+  width: 15em;
+  opacity: 0.6;
+  
+}
+
+.passwords-login #pw {
+  height: 30px;
+  width: 15em;
+  opacity: 0.6;
+  
+}
+
 .emails-login {
   position: absolute; 
-  right: 46%;
-  bottom:46%;
+  right: 45%;
+  bottom:48%;
+  
+
+  
 }
 
 .passwords-login { 
   position: absolute;
-  right:46%; 
-  bottom: 34%;
+  right:45%; 
+  bottom: 305px;
+ 
+  
 
 }
 
@@ -78,3 +135,42 @@ header > img {
   width: 20%; 
 
 }
+
+#menuBar { 
+position:fixed; 
+top: 0px;
+left:0px;
+height: 60px;
+width:104%;
+
+
+}
+
+
+#threeline {
+  height: 29px;
+  top:11px;
+  left:23px;
+
+}
+
+#login:hover {
+  opacity: 1;
+
+}
+
+#login {
+  position:absolute;
+  top:200%;
+  left:21%;
+  color: black;
+  opacity: 0.6;
+  width: 53%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+};
+

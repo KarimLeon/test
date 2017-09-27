@@ -4,48 +4,79 @@
 
 
 <head> 
-   <title> test </title> 
+   <title> Music Test Site </title> 
    <meta charset= "utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel = 'icon' href = "Images/tabicon3.png">
    <link rel = 'stylesheet' href = "style.css" >
 </head> 
 
 
 
 <body> 
+        <map name="primary">
+          <area shape="circle" coords="75,0,100" href="C:/Users/leonk_000/test(LOCAL)/index(local).html">
+        </map>
+
     <header class="main-header" role="banner">
-        <img src="Images/banner.png" alt="Banner Image"/>
+        <img usemap= "#primary" src="Images/banner.png" alt="Banner Image"/>
     </header>
 
 
 <img src = "Images/Picture2.png" id = "menu" hidden>
+<img src = "Images/menuBar.png" id = "menuBar">
 
-
+<!--
 <div class = "Clear"> 
 <img src = "Images/chris.png" id="notification" title= "Notifications">
 </div>
-<img src = "Images/moneywinner.png"  id="nav">
+-->
+
+<map name="homemenubtn">
+    <area shape="circle" coords="75,0,100" onclick= "menuBox()">
+  </map>
+
+<img usemap="homemenubtn" src = "Images/threelinemenu.png" id = "threeline" style = "position:fixed">
+
 
 <div class = "profile">
 <img src = "Images/nfs.png" id = "headphoneicon">
 </div>
   
+<form name="User_Signin" method="post" target="_blank" >
 <div class = "emails-login">
-<label for="email" style="color:white"><i style = "font-size: 25px">Email:</i></label>
 <br>
 <br>
-<input type="email" name="email" id="mail" required autocomplete="autocomplete"/>
+<input type="email" name="email" id="mail" placeholder= "email" required autocomplete="autocomplete"/>
 </div>
 
 <div class = "passwords-login">
-    <label for="email" style="color:white"><i style="font-size: 25px">Password:</i></label>
     <br>
     <br>
-    <input type="password" name="password" id="pw" required autocomplete="autocomplete"/>
+    <input type="password" name="password" id="pw" placeholder = "password" required autocomplete="autocomplete"/>
+
+    <input type="submit" value="Login" id = "login" style: "font-family: cursive"></input>
+</div>
+</form>
+
+<a href="#" id = "register"><i>Sign Up</i></a>
+
+
+<div class="menuBox" hidden style="color: white">
+    <nav class= "menu"> 
+        <ul role="menuopt">
+            <li style="list-style: none; font-size:50px; margin-left:75px"><a href="#">Home</a></li><hr>
+            <li style="list-style: none; font-size:50px; margin-left:75px"><a href="#">About</a></li><hr>
+            <li style="list-style: none; font-size:50px; margin-left:67px"><a href="#">Contact</a></li>
+          </ul>
+
+    </nav>
+
 </div>
 
-<script src = "main.js"></script>
 
+
+<script src = "main.js"></script>
 </body> 
 </html>

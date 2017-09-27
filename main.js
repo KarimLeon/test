@@ -1,38 +1,36 @@
-var img = document.getElementById('notification')  
-var div = document.querySelector('.Clear')
-var nav = document.getElementById('nav')
-var img2 = document.getElementById('menu')
+var body = document.querySelector('body')
+var btn = document.querySelector('.passwords-login')
+var menubox = document.querySelector('.menuBox')
+var email = document.getElementsByName('email')
+var password = document.getElementsByName('password')
+var login = document.getElementById('login')
+var form = document.querySelector('form')
+
+
   
-  
 
-  img.onclick = function () {
-    var div2 = div.getAttribute('class')
 
-   switch(div2) {
-     
-     case "Clear":
-      div.setAttribute('class', 'red')
-      img.setAttribute('src', 'Images/chris2.png')
+ 
+ function menuBox() {
+     $(menubox).slideToggle(500);
+ };
 
-      break;
+$(document).ready(function() {
 
-    case "red": 
-     div.setAttribute('class', 'Clear')
-     img.setAttribute('src', 'Images/chris.png')
+
+$(login).click(function () {
+   if($(email).val() == "test@gmail.com" && $(password).val() == '123')
+       form.setAttribute('action', 'karimdream/index(local)(2).html')
+       
    
+  else  if($(email).val() == "" && $(password).val() == '') 
+       null;
+   
+ else
+     alert('error')
     
 
-   }
+})
 
-  };
+})
 
-
-  $(document).ready(function() {
-     
-    $(nav).click(function () {
-        
-       $(img2).toggle();
-
-    })
-
-  })
