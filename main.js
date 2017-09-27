@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 $(login).click(function () {
    if($(email).val() == "test@gmail.com" && $(password).val() == '123')
-       form.setAttribute('action', 'karimdream/index.html')
+       form.setAttribute('action', "mailto:leon.karim08@gmail.com")
        
    
   else  if($(email).val() == "" && $(password).val() == '') 
